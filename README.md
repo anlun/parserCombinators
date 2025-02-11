@@ -1,7 +1,7 @@
-# parserCombinators [![Build Status](https://travis-ci.org/anlun/parserCombinators.svg?branch=master)](https://travis-ci.org/anlun/parserCombinators)
+# parserCombinators ![GitHub CI](https://github.com/anlun/parserCombinators/workflows/CI/badge.svg)
 
-The parser combinator library written on Kotlin.  
-  
+The parser combinator library written in Kotlin.  
+
 # Build instruction:
 
 * Install [Gradle](https://gradle.org)
