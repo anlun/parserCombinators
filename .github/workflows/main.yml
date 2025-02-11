@@ -58,7 +58,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        name: Release ${{ env.version }}
-        files: build/libs/parser-combinators-${{ env.version }}.jar
+        name: Release ${{ github.ref_name }}
+        files: build/libs/parser-combinators-*.jar
         draft: false
         prerelease: false
