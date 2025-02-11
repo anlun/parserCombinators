@@ -1,21 +1,43 @@
-# parserCombinators ![GitHub CI](https://github.com/anlun/parserCombinators/workflows/CI/badge.svg)
+# Parser Combinators Library ![GitHub CI](https://github.com/anlun/parserCombinators/workflows/CI/badge.svg)
 
-The parser combinator library written in Kotlin.  
+A lightweight and flexible parser combinator library written in Kotlin.
 
-# Build instruction:
+## Getting Started
 
-* Install [Gradle](https://gradle.org)
-* Add Gradle installation path to System Variables/Path (Windows. May also be needed for other OSs)
-* Add JDK Installation path ("JAVA_HOME") to Environment Variables (Windows). [More about](http://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/index.html)
-* Run Gradle script: for example, run Windows command prompt and type any of the followings:
-    - `gradle setup` — will configure all required dependencies, .iml-file and project SDK for IntelliJ IDEA
-    - `gradle test` — compile and run tests
-    - `gradle tasks` — more gradle tasks (such as build, jar). You can find .jar in build/libs folder.
+### Using the Library
 
+You can download the latest release JAR from the [Releases](https://github.com/anlun/parserCombinators/releases) page.
 
-### OR
-1. Run gradlew script (or gradlew.bat)
-2. In terminal: type
-    - `gradlew setup` to configure idea-based files
-    - `gradlew test` -- compile and run tests
-    - `gralew jar` -- create .jar-file. You can find it in build/libs
+Current version: 1.1
+- Requires Java 18 or later
+- Built with Kotlin 2.1.0
+
+### Building from Source
+
+The project uses Gradle Wrapper, so you don't need to install Gradle separately.
+
+1. Ensure you have JDK 18 or later installed
+2. Clone the repository
+3. Run one of the following commands:
+   ```bash
+   # Build the project and run tests
+   ./gradlew build
+
+   # Run only tests
+   ./gradlew test
+
+   # Generate JAR file (will be in build/libs/)
+   ./gradlew jar
+
+   # Setup IntelliJ IDEA project files
+   ./gradlew setup
+   ```
+
+## Releases
+
+Releases are automatically created when a new version tag (e.g., `v1.1`) is pushed to the repository. Each release includes:
+- Source code (zip/tar.gz)
+- Compiled JAR file
+- Release notes
+
+You can find all releases on the [Releases](https://github.com/anlun/parserCombinators/releases) page.
